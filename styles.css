@@ -1,0 +1,91 @@
+html {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: #181818;
+}
+
+main-calculator-container {
+  display: flex;
+  width: 60vw;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 100px;
+}
+
+#equalsButton {
+  grid-column: 1 / span 3;
+  font-size: 3rem;
+  color: #2db6fa;
+  background-color: #3d3d3d;
+}
+
+#displayHistory {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  grid-column: 1 / span 3;
+  height: 80%;
+  font-size: 3rem;
+  color: #2db6fa;
+  background-color: #212121;
+}
+
+#mainDisplay {
+  padding: 0;
+  margin: 0;
+  grid-column: 1 / span 3;
+  margin: 0;
+  height: 80%;
+  font-size: 3rem;
+  width: 100%;
+  color: #2db6fa;
+  background-color: #212121;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.main-buttons-container {
+  height: 80vh;
+  row-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.calcButton,
+#deleteButton {
+  background-color: #3d3d3d;
+  color: #2db6fa;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#displayHistory::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px 3d3d3d;
+  background-color: #3d3d3d;
+}
+
+#displayHistory::-webkit-scrollbar {
+  width: 10px;
+  background-color: #3d3d3d;
+}
+
+#displayHistory::-webkit-scrollbar-thumb {
+  background-color: #2db6fa;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+}
